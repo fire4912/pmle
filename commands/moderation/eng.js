@@ -17,7 +17,7 @@ module.exports = {
 
 let tig = args.join(' ') || " ";
 
-        message.channel.send(`Please do not use any language asides of ENGLISH is this server.We may not be able to assist you if you use different language, ${tig}`)
+        message.channel.send(`Please do not use any language asides of ENGLISH is this server.We may not be able to assist you if you use different language, ${tig}.`)
       } catch (e) {
           throw e;
       };
