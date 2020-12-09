@@ -18,10 +18,10 @@ module.exports = {
 let tig = args.join(' ') || " ";
 
         const embed = new MessageEmbed()
-            .setDescription(`Please do not use any language asides of ENGLISH is this server.We may not be able to assist you if you use different language, ${tig}`)
+            .setDescription(`)
             .setColor(greenlight);
 
-        message.channel.send(embed)
+        message.channel.send(`Please do not use any language asides of ENGLISH is this server.We may not be able to assist you if you use different language, ${tig}`)
       } catch (e) {
           throw e;
       };
