@@ -12,16 +12,13 @@ module.exports = {
     },
     run: async (bot, message, args) => {
       try {
-        if (!message.member.hasPermission('MANAGE_GUILD')) return;
-        if (args.length === 0)
-            return message.channel.send("Invaild !")
+        if (!message.member.hasPermission('MANAGE_MESSAGES')) return;
         message.delete({ timeout: 100 })
 
-  const c = args.join(' ').split(' ') 
+let tig = args.join(' ') || " ";
 
         const embed = new MessageEmbed()
-            .setTitle(`Successfully Registered script No - `+ c[1])
-            .setDescription(`Congratulations! <@`+ c[0] +`>.\nYou have successfully registered For WARRIOR ESPORTS PRESENTS PUBG MOBILE LITE T3 SCRIMS .`)
+            .setDescription(`Please do not use any language asides of ENGLISH is this server.We may not be able to assist you if you use different language, ${tig}`)
             .setColor(greenlight);
 
         message.channel.send(embed)

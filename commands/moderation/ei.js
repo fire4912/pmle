@@ -3,9 +3,9 @@ const MessageEmbed = require("discord.js");
 
 module.exports = {
 config: {
-name: 'Embed',
+name: 'ei',
 category: "moderation",
-aliases: ['em','embed'],
+aliases: ['emi','embedi'],
 usage: "(Prefix)embed #channel-name | This is a Title | #ColorCode | This is a long Description",
 accessableby: "Administrator",
 description: 'Post a Embed'},
@@ -21,7 +21,7 @@ let EmbedChannel = message.mentions.channels.first();
 
   let emb = new Discord.MessageEmbed()
   .setColor(cmd[1])
-  .setDescription(cmd[2]);
+  .setImage(cmd[2]);
 if (!EmbedChannel) { 
 let prefix = ('.')
 return message.channel.send(`**How to use Embed?** \n`+ prefix +`embed [#channel name] | Title | Color Code | Description.`);}
